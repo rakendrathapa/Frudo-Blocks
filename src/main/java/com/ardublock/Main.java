@@ -29,8 +29,9 @@ public class Main
 	private void startOpenblocksFrame() throws SAXException, IOException, ParserConfigurationException
 	{
 		
-		OpenblocksFrame openblocksFrame = new OpenblocksFrame();
-		openblocksFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		OpenblocksFrame openblocksFrame;
+                openblocksFrame = new OpenblocksFrame();
+		openblocksFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //Normal closing the GUI : TODO : Nothing
 		Context context = Context.getContext();
 		context.setInArduino(false);
 		openblocksFrame.setVisible(true);

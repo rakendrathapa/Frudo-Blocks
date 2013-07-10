@@ -110,7 +110,7 @@ public class Translator
 		
 		TranslatorBlock rootTranslatorBlock = translatorBlockFactory.buildTranslatorBlock(this, blockId, block.getGenusName(), "", "", block.getBlockLabel());
 		
-		return rootTranslatorBlock.toCode();
+		return rootTranslatorBlock.toCode();        //Raken Comment : If the block is correct. Generates the corresponding code for the block. 
 	}
 	
 	public BlockAdaptor getBlockAdaptor()

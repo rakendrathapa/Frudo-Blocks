@@ -1,24 +1,21 @@
 package com.ardublock.ui.listener;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.HashSet;
-import java.util.ResourceBundle;
-import java.util.Set;
-
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-
 import com.ardublock.core.Context;
 import com.ardublock.translator.Translator;
 import com.ardublock.translator.block.exception.BlockException;
 import com.ardublock.translator.block.exception.SocketNullException;
 import com.ardublock.translator.block.exception.SubroutineNameDuplicatedException;
 import com.ardublock.translator.block.exception.SubroutineNotDeclaredException;
-
 import edu.mit.blocks.codeblocks.Block;
 import edu.mit.blocks.renderable.RenderableBlock;
 import edu.mit.blocks.workspace.Workspace;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.HashSet;
+import java.util.ResourceBundle;
+import java.util.Set;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 public class GenerateCodeButtonListener implements ActionListener
 {
@@ -42,20 +39,20 @@ public class GenerateCodeButtonListener implements ActionListener
 		Translator translator = new Translator(workspace);
 		translator.reset();
 		
-		Iterable<RenderableBlock> renderableBlocks = workspace.getRenderableBlocks();
+		Iterable<RenderableBlock> renderableBlocks = workspace.getRenderableBlocks();   //Raken Comment : Here we already Get the Number of the blocks that might be there.
 		
-		Set<RenderableBlock> loopBlockSet = new HashSet<RenderableBlock>();
-		Set<RenderableBlock> subroutineBlockSet = new HashSet<RenderableBlock>();
-		StringBuilder code = new StringBuilder();
+		Set<RenderableBlock> loopBlockSet = new HashSet<RenderableBlock>();     //Raken Comment : Set the loopBlockSet
+		Set<RenderableBlock> subroutineBlockSet = new HashSet<RenderableBlock>();   //Raken Commen : Set the subroutine set.
+		StringBuilder code = new StringBuilder();   //Raken Comment : This is where the code will be build.
 		
 		
-		for (RenderableBlock renderableBlock:renderableBlocks)
+		for (RenderableBlock renderableBlock:renderableBlocks)      //Raken Comment : Iterates through the list of all the blocks. You can check the count.
 		{
-			Block block = renderableBlock.getBlock();
+                        Block block = renderableBlock.getBlock();   //Raken Comment : Gets the block information and keeps building it into the StringBuilder - I guess -Will modify if otherwitse. 
 			
-			if (!block.hasPlug() && (Block.NULL.equals(block.getBeforeBlockID())))
+			if (!block.hasPlug() && (Block.NULL.equals(block.getBeforeBlockID())))      //Raken Comment : Check condition - block as no Plug OR Returns the Block ID connected to the before connector of this
 			{
-				if(block.getGenusName().equals("loop"))
+				if(block.getGenusName().equals("loop")) 
 				{
 					loopBlockSet.add(renderableBlock);
 				}
@@ -78,7 +75,7 @@ public class GenerateCodeButtonListener implements ActionListener
 				
 			}
 		}
-		if (loopBlockSet.size() == 0)
+		if (loopBlockSet.isEmpty())
 		{
 			JOptionPane.showOptionDialog(parentFrame, uiMessageBundle.getString("ardublock.translator.exception.noLoopFound"), "Error", JOptionPane.OK_OPTION, JOptionPane.ERROR_MESSAGE, null, null, JOptionPane.OK_OPTION);
 			return ;
@@ -97,7 +94,7 @@ public class GenerateCodeButtonListener implements ActionListener
 
 		try
 		{
-			for (RenderableBlock renderableBlock : loopBlockSet)
+			for (RenderableBlock renderableBlock : loopBlockSet)        //Raken Comment : checking the loopBlock ; Usually loopBlockSet == 1
 			{
 				Block loopBlock = renderableBlock.getBlock();
 				code.append(translator.translate(loopBlock.getBlockID()));
@@ -113,7 +110,6 @@ public class GenerateCodeButtonListener implements ActionListener
 		}
 		catch (SocketNullException e1)
 		{
-			e1.printStackTrace();
 			success = false;
 			Long blockId = e1.getBlockId();
 			Iterable<RenderableBlock> blocks = workspace.getRenderableBlocks();
@@ -130,7 +126,6 @@ public class GenerateCodeButtonListener implements ActionListener
 		}
 		catch (BlockException e2)
 		{
-			e2.printStackTrace();
 			success = false;
 			Long blockId = e2.getBlockId();
 			Iterable<RenderableBlock> blocks = workspace.getRenderableBlocks();
@@ -147,7 +142,6 @@ public class GenerateCodeButtonListener implements ActionListener
 		}
 		catch (SubroutineNotDeclaredException e3)
 		{
-			e3.printStackTrace();
 			success = false;
 			Long blockId = e3.getBlockId();
 			Iterable<RenderableBlock> blocks = workspace.getRenderableBlocks();

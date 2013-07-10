@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <?xml version="1.0" encoding="UTF-8"?>
 <project
     xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -8,8 +16,8 @@
 	<artifactId>ardublock</artifactId>
 	<packaging>jar</packaging>
 	<version>0.1.0-SNAPSHOT</version>
-	<name>FrugalBlock</name>
-	<description>A Block Programming Language for Fruduino</description>
+	<name>ArduBlock</name>
+	<description>A Block Programming Language for Arduino</description>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -76,7 +84,7 @@
 	<repositories>
 		<repository>
 			<id>central</id>
-			<url>http://repo1.maven.org/maven2/</url>
+			<url>http://repo1.maven.org/maven2</url>
 		</repository>
 	</repositories>
 	<dependencies>
@@ -93,4 +101,18 @@
 		</dependency>
 	</dependencies>
 	<url>http://ardublock.com/</url>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <configuration>
+                    <configLocation>config/sun_checks.xml</configLocation>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
 </project>
+
+    
+</root>

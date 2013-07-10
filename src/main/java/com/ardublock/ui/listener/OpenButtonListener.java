@@ -21,8 +21,7 @@ public class OpenButtonListener implements ActionListener
 	
 	public OpenButtonListener(OpenblocksFrame frame)
 	{
-		context = Context.getContext();
-		
+		context = Context.getContext();		
 		this.parentFrame = frame;
 	}
 	

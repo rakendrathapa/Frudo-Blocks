@@ -19,6 +19,7 @@ public class Context
 {
 	public final static String LANG_DTD_PATH = "/com/ardublock/block/lang_def.dtd";
 	public final static String ARDUBLOCK_LANG_PATH = "/com/ardublock/block/ardublock.xml";
+//        public final static String ARDUBLOCK_LANG_PATH = "/com/ardublock/block/ardublock_1.xml";
 	public final static String ARDUINO_VERSION_UNKNOWN = "unknown";
 	
 	private static Context singletonContext;
@@ -32,8 +33,8 @@ public class Context
 	private String arduinoVersionString = ARDUINO_VERSION_UNKNOWN;
 	private OsType osType; 
 			
-	final public static String APP_NAME = "ArduBlock";
-	
+//	final public static String APP_NAME = "ArduBlock";
+	final public static String APP_NAME = "Frugal-Block";
 	
 	
 	public enum OsType
@@ -48,17 +49,14 @@ public class Context
 	
 	public static Context getContext()
 	{
-		if (singletonContext == null)
-		{
-			synchronized (Context.class)
-			{
-				if (singletonContext == null)
-				{
-					singletonContext = new Context();
-				}
-			}
-		}
-		return singletonContext;
+            synchronized (Context.class)
+            {
+                if (singletonContext == null)
+                {
+                    singletonContext = new Context();
+                }
+            }
+            return singletonContext;
 	}
 	
 	private WorkspaceController workspaceController;

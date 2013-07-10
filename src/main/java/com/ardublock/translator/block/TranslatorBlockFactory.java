@@ -24,7 +24,10 @@ public class TranslatorBlockFactory
 		shortClassName.put("inversedDigitalInput", "com.ardublock.translator.block.InversedDigitalInputBlock");
 		shortClassName.put("inversedDigitalOutput", "com.ardublock.translator.block.InversedDigitalOutputBlock");
 		shortClassName.put("inversedAnalogOutput", "com.ardublock.translator.block.InversedAnalogOutputBlock");
-		shortClassName.put("servo", "com.ardublock.translator.block.ServoBlock");
+                shortClassName.put("servo", "com.ardublock.translator.block.ServoBlock");
+                shortClassName.put("Frudino_Sensor", "com.ardublock.translator.block.Frudino.Sensor.FrudinoSensorBlock");       //Raken Comment : Introduced for Frudino Libraries
+                shortClassName.put("Input_A", "com.ardublock.translator.block.Frudino.Sensor.FrudinoSensorInputBlock");     //Raken Comment : Input PIN for our Analog SENSOR.
+                shortClassName.put("TestBlock","com.ardublock.translator.block.Frudino.Sensor.FrudinoTestBlock");           //Raken Comment : Out Test Block - Can experiment here ..!!
 	}
 	
 	

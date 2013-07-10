@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<project name="Frugal-Blocks" basedir="." default="build">
+	<property name="src.dir" value="src/main/java/com/ardublock"/>
+	<property name="build.dir" value="target/classes/com/ardublock"/>
+	<property name="ardu_build.dir" value="target/classes"/>
+	<property name="openblock_build.dir" value="../openblocks/target/classes"/>
+	<property name="name" value="fax"/>
+	<path id="master-classpath">
+		<fileset dir="lib">
+			<include name="*.jar"/>
+		</fileset>
+		<pathelement path="${build.dir}"/>
+	</path>
+	
+	<target name="build" description="Compile source tree java files">
+		<mkdir dir="${build.dir}"/>
+		<javac destdir="${build.dir}" source="1.5" target="1.5">
+			<src path="${src.dir}"/>
+			<classpath refid="master-classpath"/>
+		</javac>
+	</target>
+	
+	<target name="build-jar">
+		<jar destfile="frugal-labs.jar"	basedir="${ardu_build.dir}" duplicate="preserve">
+			<manifest>
+				<attribute name="Main-Class" value="com.ardublock.Main"/>
+			</manifest>
+			<include name="**/*.class"/>
+			<fileset dir=".">
+				<include name="*.properties*"/>
+				<include name="*.gif*"/>
+				<include name="*.jpg*"/>
+				<include name="*.png*"/>
+				<include name="*.xml"/>
+				<include name="*.csv"/>
+			</fileset>
+		</jar>
+
+		<jar destfile="frugal-labs.jar" basedir="${openblock_build.dir}" update="true" duplicate="preserve">
+		</jar>
+	</target>
+
+	<target name="clean" description="Clean output directories">
+		<delete>
+			<fileset dir="${build.dir}">
+				<include name="**/*.class"/>
+			</fileset>
+		</delete>
+	</target>
+</project>

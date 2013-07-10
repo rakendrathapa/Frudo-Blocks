@@ -59,13 +59,14 @@ public class OpenblocksFrame extends JFrame
 	
 	public OpenblocksFrame()
 	{
-		saveFilePath = null;
-		saveFileName = "untitled";
+		saveFilePath = null;        //TODO : Can set to last open path
+		saveFileName = "untitled";  //TODO : Set to the last open file
 		
-		context = Context.getContext();
+		context = Context.getContext(); 
 		this.setTitle(makeFrameTitle());
-		this.setSize(new Dimension(800, 600));
-		this.setLayout(new BorderLayout());
+//		this.setSize(new Dimension(800, 600));
+		this.setSize(new Dimension(1024,768)); //TODO :  Just check if we require the dimension change, 
+                this.setLayout(new BorderLayout());
 		//put the frame to the center of screen
 		this.setLocationRelativeTo(null);
 		//this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -83,7 +84,7 @@ public class OpenblocksFrame extends JFrame
 	
 	private void initOpenBlocks()
 	{
-		Context context = Context.getContext();
+//		Context context = Context.getContext();     //Raken : Removed from here. Taking the already context existing. 
 		
 		/*
 		WorkspaceController workspaceController = context.getWorkspaceController();

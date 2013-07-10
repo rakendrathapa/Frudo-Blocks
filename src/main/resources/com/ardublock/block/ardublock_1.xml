@@ -609,7 +609,8 @@
 				<text>
 					Reports the quotient of two numbers (
 					<arg n="1" />
-					Ûçäâ				<arg n="2" />
+					˜
+					<arg n="2" />
 					).
 				</text>
 			</description>
@@ -1314,14 +1315,11 @@
 
 		<BlockGenus name="Tinker_I0" kind="data" color="255 255 255"
 			initlabel="bg.Tinker_I0" editable-label="no">
-			<description>
-				<text>Tinker I0</text>
-			</description>
 			<BlockConnectors>
 				<BlockConnector connector-type="number"
 					connector-kind="plug" position-type="mirror" />
 			</BlockConnectors>
-		</BlockGenus> 
+		</BlockGenus>
 		<BlockGenus name="Tinker_I1" kind="data" color="255 255 255"
 			initlabel="bg.Tinker_I1" editable-label="no">
 			<BlockConnectors>
@@ -1567,7 +1565,23 @@
 			</Images>
 		</BlockGenus>
 
-		
+		<BlockGenus name="df_line_tracking_sensor" kind="data"
+			color="255 102 0" initlabel="bg.df_line_tracking_sensor">
+			<BlockConnectors>
+				<BlockConnector connector-type="boolean"
+					connector-kind="plug" />
+				<BlockConnector connector-type="number"
+					connector-kind="socket" label="bc.pin_number">
+					<DefaultArg genus-name="number" label="1" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/dfrobot/sen0017.jpg</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+
 		<BlockGenus name="df_digital_push_button" kind="data"
 			color="255 102 0" initlabel="bg.df_digital_push_button">
 			<BlockConnectors>
@@ -2322,137 +2336,6 @@
 				</Image>
 			</Images>
 		</BlockGenus>
-		
-		
-		
-		<!-- Frudino Kit specific components -->
-		
-		<!-- 1. SENSOR 0-5 -->
-		<!-- Raken : This is the main block for the sensor -> calls the input of the pin value. -->
-		<!--<BlockGenus name="Sensor" kind="data" color="255 255 255"
-			initlabel="bg.Sensor" editable-label="no">
-			<description>
-				<text>Read Sensor Value</text>
-			</description>
-			<BlockConnectors>
-				<BlockConnector connector-type="number"
-					connector-kind="socket" label="#">
-					<DefaultArg genus-name="A0" label="A0" />
-				</BlockConnector>
-				<BlockConnector connector-type="boolean"
-					connector-kind="plug" />
-			</BlockConnectors>
-		</BlockGenus>
-		-->
-		<BlockGenus name="Sensor_0" kind="data" color="255 255 255"
-			initlabel="bg.Sensor_0" editable-label="no">
-			<description>
-				<text>Read Sensor0 Value</text>
-			</description>
-			<BlockConnectors>
-				<BlockConnector connector-type="number"
-					connector-kind="plug">
-				</BlockConnector>
-				<BlockConnector connector-type="boolean"
-					connector-kind="plug" />
-			</BlockConnectors>
-		</BlockGenus>
-				<BlockGenus name="Sensor_1" kind="data" color="255 255 255"
-			initlabel="bg.Sensor_1" editable-label="no">
-			<description>
-				<text>Read Sensor1 Value</text>
-			</description>
-			<BlockConnectors>
-				<BlockConnector connector-type="number"
-					connector-kind="plug">
-				</BlockConnector>
-				<BlockConnector connector-type="boolean"
-					connector-kind="plug" />
-			</BlockConnectors>
-		</BlockGenus>
-				<BlockGenus name="Sensor_2" kind="data" color="255 255 255"
-			initlabel="bg.Sensor_2" editable-label="no">
-			<description>
-				<text>Read Sensor2 Value</text>
-			</description>
-			<BlockConnectors>
-				<BlockConnector connector-type="number"
-					connector-kind="plug">
-				</BlockConnector>
-				<BlockConnector connector-type="boolean"
-					connector-kind="plug" />
-			</BlockConnectors>
-		</BlockGenus>
-				<BlockGenus name="Sensor_3" kind="data" color="255 255 255"
-			initlabel="bg.Sensor_3" editable-label="no">
-			<description>
-				<text>Read Sensor3 Value</text>
-			</description>
-			<BlockConnectors>
-				<BlockConnector connector-type="number"
-					connector-kind="plug">
-				</BlockConnector>
-				<BlockConnector connector-type="boolean"
-					connector-kind="plug" />
-			</BlockConnectors>
-		</BlockGenus>
-				<BlockGenus name="Sensor_4" kind="data" color="255 255 255"
-			initlabel="bg.Sensor_4" editable-label="no">
-			<description>
-				<text>Read Sensor4 Value</text>
-			</description>
-			<BlockConnectors>
-				<BlockConnector connector-type="number"
-					connector-kind="plug">
-				</BlockConnector>
-				<BlockConnector connector-type="boolean"
-					connector-kind="plug" />
-			</BlockConnectors>
-		</BlockGenus>
-				<BlockGenus name="Sensor_5" kind="data" color="255 255 255"
-			initlabel="bg.Sensor_5" editable-label="no">
-			<description>
-				<text>Read Sensor5 Value</text>
-			</description>
-			<BlockConnectors>
-				<BlockConnector connector-type="number"
-					connector-kind="plug">
-				</BlockConnector>
-				<BlockConnector connector-type="boolean"
-					connector-kind="plug" />
-			</BlockConnectors>
-		</BlockGenus>
-
-		
-		<!-- 1. MOTOR 1-4 -->
-		<!-- Raken : This is the main block for the motor -> calls the input of the pin value. -->
-		
-		<BlockGenus name="TestBlock" kind="data" color="255 255 255"
-			initlabel="bg.TestBlock" editable-label="no">
-			<description>
-				<text>Test Block</text>
-			</description>
-			<BlockConnectors>
-				<BlockConnector connector-type="number"
-					connector-kind="plug" label="#">
-		<!--			<DefaultArg genus-name="A0" label="A0" />-->
-				</BlockConnector>
-				<BlockConnector connector-type="boolean"
-					connector-kind="plug" />
-			</BlockConnectors>
-		</BlockGenus>
-		
-
-	<!--		
-		<BlockGenus name="number" kind="data" color="208 10 16"
-			initlabel="bg.number" editable-label="yes">
-			<BlockConnectors>
-				<BlockConnector connector-type="number"
-					connector-kind="plug" position-type="mirror" />
-			</BlockConnectors>
-		</BlockGenus>
-	-->
-
 
 	</BlockGenuses>
 
@@ -2522,14 +2405,6 @@
 			<FamilyMember>Tinker_O4</FamilyMember>
 			<FamilyMember>Tinker_O5</FamilyMember>
 		</BlockFamily>
-		<BlockFamily>
-			<FamilyMember>Sensor_0</FamilyMember>
-			<FamilyMember>Sensor_1</FamilyMember>
-			<FamilyMember>Sensor_2</FamilyMember>
-			<FamilyMember>Sensor_3</FamilyMember>
-			<FamilyMember>Sensor_4</FamilyMember>
-			<FamilyMember>Sensor_5</FamilyMember>
-		</BlockFamily>	
 	</BlockFamilies>
 
 	<BlockDrawerSets>
@@ -2628,29 +2503,77 @@
 				<BlockGenusMember>wire_read</BlockGenusMember>
 				<BlockGenusMember>wire_isread</BlockGenusMember>
 			</BlockDrawer>
-			
-			<BlockDrawer button-color="0 255 0" name="bd.Frudino">
-				<BlockGenusMember>pin-read-digital</BlockGenusMember> 
-				<BlockGenusMember>pin-read-analog</BlockGenusMember>  
-				<BlockGenusMember>pin-write-digital</BlockGenusMember>
-				<BlockGenusMember>pin-write-analog</BlockGenusMember>
-				<BlockGenusMember>servo</BlockGenusMember>
-				<BlockGenusMember>ultrasonic</BlockGenusMember>
-				<BlockGenusMember>tone</BlockGenusMember>
-				<BlockGenusMember>tone_time</BlockGenusMember>
-				<BlockGenusMember>no_tone</BlockGenusMember>
-				
-	<!--		TODO - Implement these Block Genus		-->
-				<BlockGenusMember>Sensor_0</BlockGenusMember>
-				<BlockGenusMember>TestBlock</BlockGenusMember>
 
-	<!--			<BlockGenusMember>sensor-read</BlockGenusMember>  
-				<BlockGenusMember>motor</BlockGenusMember>
-				<BlockGenusMember>buzzer</BlockGenusMember>
-				<BlockGenusMember>LED</BlockGenusMember>		-->
-				
+			<BlockDrawer button-color="255 255 255" name="bd.tinkerkit"
+				type="factory">
+				<BlockGenusMember>Tinker_LED</BlockGenusMember>
+				<BlockGenusMember>Tinker_LED_pwm</BlockGenusMember>
+				<BlockGenusMember>Tinker_Button</BlockGenusMember>
+				<BlockGenusMember>Tinker_Accmeter</BlockGenusMember>
+				<BlockGenusMember>Tinker_Hall</BlockGenusMember>
+				<BlockGenusMember>Tinker_LDR</BlockGenusMember>
+				<BlockGenusMember>Tinker_LinearPotentiometer</BlockGenusMember>
+				<BlockGenusMember>Tinker_RotaryPotentiometer</BlockGenusMember>
+				<BlockGenusMember>Tinker_Thermistor</BlockGenusMember>
+				<BlockGenusMember>Tinker_Touch</BlockGenusMember>
+				<BlockGenusMember>Tinker_Tilt</BlockGenusMember>
+				<BlockGenusMember>Tinker_Relay</BlockGenusMember>
+				<BlockGenusMember>Tinker_Mosfet</BlockGenusMember>
+				<BlockGenusMember>Tinker_Mosfet_pwm</BlockGenusMember>
 			</BlockDrawer>
-			
+			<!-- <BlockDrawer button-color="0 255 0" name="XinChejian" type="factory"> 
+				<BlockGenusMember>xcj_motor_forward</BlockGenusMember> <BlockGenusMember>xcj_motor_backward</BlockGenusMember> 
+				<BlockGenusMember>xcj_ms_digital_read</BlockGenusMember> <BlockGenusMember>xcj_ms_digital_write</BlockGenusMember> 
+				</BlockDrawer> -->
+			<BlockDrawer button-color="255 102 0" name="bd.dfrobot"
+				type="factory">
+				<BlockGenusMember>df_digital_viberation_sensor</BlockGenusMember>
+				<BlockGenusMember>df_digital_tilt_sensor</BlockGenusMember>
+				<BlockGenusMember>df_digital_infrared_motion_sensor</BlockGenusMember>
+				<BlockGenusMember>df_digital_ir_receiver_module</BlockGenusMember>
+				<BlockGenusMember>df_adjustable_infrared_sensor_switch</BlockGenusMember>
+				<BlockGenusMember>df_line_tracking_sensor</BlockGenusMember>
+				<BlockGenusMember>df_digital_push_button</BlockGenusMember>
+				<BlockGenusMember>df_joystick_module_button</BlockGenusMember>
+				<BlockGenusMember>df_capacitive_touch_sensor</BlockGenusMember>
+				<BlockGenusMember>df_digital_magnetic_sensor</BlockGenusMember>
+				<BlockGenusMember>df_pizeo_disk_vibration_sensor</BlockGenusMember>
+				<BlockGenusMember>df_analog_ambient_light_sensor</BlockGenusMember>
+				<BlockGenusMember>df_analog_grayscale_sensor</BlockGenusMember>
+				<BlockGenusMember>df_flame_sensor</BlockGenusMember>
+				<BlockGenusMember>df_temperature_sensor</BlockGenusMember>
+				<BlockGenusMember>df_joystick_module_x</BlockGenusMember>
+				<BlockGenusMember>df_joystick_module_y</BlockGenusMember>
+				<BlockGenusMember>df_analog_mma7361_x</BlockGenusMember>
+				<BlockGenusMember>df_analog_mma7361_y</BlockGenusMember>
+				<BlockGenusMember>df_analog_mma7361_z</BlockGenusMember>
+				<BlockGenusMember>df_mma7260_x</BlockGenusMember>
+				<BlockGenusMember>df_mma7260_y</BlockGenusMember>
+				<BlockGenusMember>df_mma7260_z</BlockGenusMember>
+				<BlockGenusMember>df_analog_gp2y0a21</BlockGenusMember>
+				<BlockGenusMember>df_analog_moisture</BlockGenusMember>
+				<BlockGenusMember>df_analog_rotation_sensor_v1</BlockGenusMember>
+				<BlockGenusMember>df_analog_rotation_sensor_v2</BlockGenusMember>
+				<BlockGenusMember>df_analog_sound_sensor</BlockGenusMember>
+				<BlockGenusMember>df_analog_gas_sensor</BlockGenusMember>
+				<BlockGenusMember>df_analog_co_sensor</BlockGenusMember>
+				<BlockGenusMember>df_analog_voltage_divider</BlockGenusMember>
+				<BlockGenusMember>df_servo</BlockGenusMember>
+				<BlockGenusMember>df_360_degree_rotation_motor</BlockGenusMember>
+				<BlockGenusMember>df_led</BlockGenusMember>
+				<BlockGenusMember>df_led_pwm</BlockGenusMember>
+				<BlockGenusMember>df_piranha_led</BlockGenusMember>
+				<BlockGenusMember>df_piranha_led_pwm</BlockGenusMember>
+				<BlockGenusMember>df_relay</BlockGenusMember>
+				<BlockGenusMember>df_buzzer</BlockGenusMember>
+				<BlockGenusMember>df_buzzer_tone</BlockGenusMember>
+				<BlockGenusMember>df_buzzer_tone_delay</BlockGenusMember>
+			</BlockDrawer>
+
+			<BlockDrawer button-color="0 255 0" name="bd.seeedstudio">
+				<BlockGenusMember>seeed_joystick</BlockGenusMember>
+				<BlockGenusMember>seeed_joystick_button</BlockGenusMember>
+			</BlockDrawer>
 			<!-- Shapes are automatically loaded as blocks in the Shapes drawer (see 
 				slcodeblocks.ShapeBlocksGenerator for details) -->
 			<!-- Sound blocks reside in the auto-generated String drawer. (see slcodeblocks.SoundBlocksGenerator 
@@ -2659,7 +2582,7 @@
 	</BlockDrawerSets>
 
 	<Pages drawer-with-page="yes">
-		<Page page-name="Frugal-Block" page-width="400" />
+		<Page page-name="ArduBlock" page-width="400" />
 		<!-- <Page page-name="Everyone" page-width="400"></Page> <Page page-name="Setup" 
 			page-width="400"></Page> <Page page-name="Runtime" page-width="400"></Page> -->
 	</Pages>

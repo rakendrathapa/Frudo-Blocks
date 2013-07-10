@@ -1,0 +1,8 @@
+21/8/2013
+Thing to do
+1. remove unwanted/unsupported programming tabs
+	1.1. add fruduino-kit programming tab
+2. change of the name of the software to Frugal-Blocks
+3. Change top-left viewer name to Frugal-Blocks
+4. Create Menu-Items.Move Button to Left Side.
+	4.1 Addtion Of Help. 

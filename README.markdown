@@ -1,7 +1,7 @@
-ArduBlock
+FrudoBlock
 ======
 
-ArduBlock is a Block Programming Language for Arduino. The language and functions model closely to [Arduino Language Reference](http://arduino.cc/en/Reference/HomePage)
+FrudoBlock is developed on ArduBlock is a Block Programming Language for Frudinorduino. 
 
 Installation
 ----
@@ -9,30 +9,14 @@ The project is managed by Maven. After checking out the source for the first tim
 
 	$ mvn validate
 
-Usage
-----
-
-	$ mvn exec:java -Dexec.mainClass="com.ardublock.Main"
-
-Development
-----
-Change the /src/main/resources/com/ardublock/block/ardublock_def.xml to add new blocks to ArduBlock
-
-	$ mvn clean package
-
-	$ mvn compile exec:java -Dexec.mainClass="com.ardublock.Main"
-
-The Visual Block environment should show up. Happy Hacking! ;) 
-
-Authors
-----
-* David Li taweili@gmail.com
-* HE Qichen heqichen@gmail.com
-
 
 ToDo
 ----
 * Integrate the [scripting engine](http://java.sun.com/developer/technicalArticles/J2SE/Desktop/scripting/) into the language blocks for code generation
+* Modify to include all blocks of Frudino.
+* Remove extra Blocks.
+* Incorporate examples
+* Modify the code to FrudoBlock.
 
 License
 ----

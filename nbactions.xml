@@ -7,10 +7,10 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:1.2:exec</goal>
             </goals>
             <properties>
-                <exec.args>-classpath %classpath com.ardublock.Main</exec.args>
+                <exec.args>-classpath %classpath com.frugalblock.Main</exec.args>
                 <exec.executable>java</exec.executable>
                 <exec.classpathScope>runtime</exec.classpathScope>
-                <exec.workingdir>C:\Users\rthapa\Documents\MyCodes\workspace\ardublock\ardublock</exec.workingdir>
+                <exec.workingdir>C:\Users\rthapa\Documents\MyCodes\workspace\FrugalBlocks</exec.workingdir>
             </properties>
         </action>
         <action>
@@ -20,11 +20,11 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:1.2:exec</goal>
             </goals>
             <properties>
-                <exec.args>-Xdebug -Xrunjdwp:transport=dt_socket,server=n,address=${jpda.address} -classpath %classpath com.ardublock.Main</exec.args>
+                <exec.args>-Xdebug -Xrunjdwp:transport=dt_socket,server=n,address=${jpda.address} -classpath %classpath com.frugalblock.Main</exec.args>
                 <exec.executable>java</exec.executable>
                 <exec.classpathScope>runtime</exec.classpathScope>
                 <jpda.listen>true</jpda.listen>
-                <exec.workingdir>C:\Users\rthapa\Documents\MyCodes\workspace\ardublock\ardublock</exec.workingdir>
+                <exec.workingdir>C:\Users\rthapa\Documents\MyCodes\workspace\FrugalBlocks</exec.workingdir>
             </properties>
         </action>
         <action>
@@ -34,9 +34,9 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:1.2:exec</goal>
             </goals>
             <properties>
-                <exec.args>${profiler.args} -classpath %classpath com.ardublock.Main</exec.args>
+                <exec.args>${profiler.args} -classpath %classpath com.frugalblock.Main</exec.args>
                 <exec.executable>${profiler.java}</exec.executable>
-                <exec.workingdir>C:\Users\rthapa\Documents\MyCodes\workspace\ardublock\ardublock</exec.workingdir>
+                <exec.workingdir>C:\Users\rthapa\Documents\MyCodes\workspace\FrugalBlocks</exec.workingdir>
             </properties>
         </action>
     </actions>

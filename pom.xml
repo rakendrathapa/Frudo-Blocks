@@ -31,7 +31,7 @@
 					<finalName>${project.artifactId}</finalName>
 					<archive>
 						<manifest>
-							<mainClass>com.ardublock.Main</mainClass>
+							<mainClass>com.frugalblock.Main</mainClass>
 						</manifest>
 					</archive>
 					<descriptors>

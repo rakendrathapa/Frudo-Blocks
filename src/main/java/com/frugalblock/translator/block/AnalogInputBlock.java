@@ -1,0 +1,31 @@
+package com.frugalblock.translator.block;
+
+import com.frugalblock.translator.Translator;
+import com.frugalblock.translator.block.exception.BlockException;
+import com.frugalblock.translator.block.exception.SocketNullException;
+import com.frugalblock.translator.block.exception.SubroutineNotDeclaredException;
+
+public class AnalogInputBlock extends TranslatorBlock
+{
+	public AnalogInputBlock(Long blockId, Translator translator, String codePrefix, String codeSuffix, String label)
+	{
+		super(blockId, translator, codePrefix, codeSuffix, label);
+	}
+
+	public String toCode() throws SocketNullException, SubroutineNotDeclaredException
+	{
+		String ret = "analogRead(A";
+		TranslatorBlock translatorBlock = this.getRequiredTranslatorBlockAtSocket(0);
+		if (translatorBlock instanceof NumberBlock)
+		{
+			ret = ret + translatorBlock.toCode();
+			ret = ret + ")";
+			return codePrefix + ret + codeSuffix;
+		}
+		else
+		{
+			throw new BlockException(blockId, "analog pin# must be a number");
+		}
+	}
+
+}

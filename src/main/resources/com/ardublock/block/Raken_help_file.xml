@@ -1,0 +1,158 @@
+		<BlockGenus name="pin-read-analog" kind="data" color="77 191 169"
+			initlabel="bg.pin-read-analog">
+			<description>
+				<text>Read analog value from pin</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number"
+					connector-kind="socket" label="#">
+					<DefaultArg genus-name="number" label="1" />
+				</BlockConnector>
+				<BlockConnector connector-type="number"
+					connector-kind="plug" />
+			</BlockConnectors>
+		</BlockGenus>
+		
+		<BlockGenus name="pin-read-digital" kind="data" color="77 191 169"
+			initlabel="bg.pin-read-digital">
+			<description>
+				<text>Read digital value from pin</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number"
+					connector-kind="socket" label="#">
+					<DefaultArg genus-name="number" label="1" />
+				</BlockConnector>
+				<BlockConnector connector-type="boolean"
+					connector-kind="plug" />
+			</BlockConnectors>
+		</BlockGenus>
+		
+		<BlockGenus name="pin-write-digital" kind="command" color="77 191 169"
+			initlabel="bg.pin-write-digital">
+			<description>
+				<text>write digital to pin</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number"
+					connector-kind="socket" label="#">
+					<DefaultArg genus-name="number" label="1" />
+				</BlockConnector>
+				<BlockConnector connector-type="boolean"
+					connector-kind="socket">
+					<DefaultArg genus-name="digital-high" label="HIGH" />
+				</BlockConnector>
+			</BlockConnectors>
+		</BlockGenus>
+
+		
+		<BlockGenus name="Tinker_LED" kind="command" color="255 255 255"
+			initlabel="bg.Tinker_LED">
+			<description>
+				<text>TinkerKit LED</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number"
+					connector-kind="socket" label="bc.pin_number">
+					<DefaultArg genus-name="Tinker_O1" label="O1" />
+				</BlockConnector>
+				<BlockConnector connector-type="boolean"
+					connector-kind="socket" label="bc.status">
+					<DefaultArg genus-name="digital-on" label="ON" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/arduino/Tinker_LED.jpg</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+
+		
+		
+		<BlockGenus name="xcj_motor_forward" kind="command" color="0 255 0"
+			initlabel="bg.xcj_motor_forward">
+			<description>
+				<text>forward</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number"
+					connector-kind="socket" label="M#">
+					<DefaultArg genus-name="number" label="1" />
+				</BlockConnector>
+				<BlockConnector connector-type="number"
+					connector-kind="socket" label="speed">
+					<DefaultArg genus-name="number" label="255" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/motor.jpg</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+
+		<BlockGenus name="xcj_motor_backward" kind="command" color="0 255 0"
+			initlabel="bg.xcj_motor_backward">
+			<description>
+				<text>Moving the car backward</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number"
+					connector-kind="socket" label="M#">
+					<DefaultArg genus-name="number" label="1" />
+				</BlockConnector>
+				<BlockConnector connector-type="number"
+					connector-kind="socket" label="speed">
+					<DefaultArg genus-name="number" label="255" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/motor.jpg</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+
+		
+		<BlockGenus name="df_digital_push_button" kind="data"
+			color="255 102 0" initlabel="bg.df_digital_push_button">
+			<BlockConnectors>
+				<BlockConnector connector-type="boolean"
+					connector-kind="plug" />
+				<BlockConnector connector-type="number"
+					connector-kind="socket" label="bc.pin_number">
+					<DefaultArg genus-name="number" label="1" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/dfrobot/dfr0029.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+		
+		
+		<!-- Buzzer -->
+		
+		<BlockGenus name="df_buzzer" kind="command" color="255 102 0"
+			initlabel="bg.df_buzzer">
+			<description>
+				<text>DFRobot buzzer Module</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number"
+					connector-kind="socket" label="bc.pin_number">
+					<DefaultArg genus-name="number" label="1" />
+				</BlockConnector>
+				<BlockConnector connector-type="boolean"
+					connector-kind="socket" label="bc.status">
+					<DefaultArg genus-name="digital-on" label="ON" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/dfrobot/dfr0032.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>

@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package com.ardublock.translator.block.Frudino.Sensor;
+package com.ardublock.translator.block.Frudino;
 
 import com.ardublock.translator.Translator;
 import com.ardublock.translator.block.TranslatorBlock;

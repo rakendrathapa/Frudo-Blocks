@@ -1,16 +1,12 @@
 package com.ardublock;
 
-import java.io.IOException;
-import java.util.Map;
-
-import javax.swing.JFrame;
-import javax.xml.parsers.ParserConfigurationException;
-
-import org.xml.sax.SAXException;
-
 import com.ardublock.core.Context;
 import com.ardublock.ui.ConsoleFrame;
 import com.ardublock.ui.OpenblocksFrame;
+import java.io.IOException;
+import javax.swing.JFrame;
+import javax.xml.parsers.ParserConfigurationException;
+import org.xml.sax.SAXException;
 
 public class Main
 {

@@ -2329,22 +2329,8 @@
 		
 		<!-- 1. SENSOR 0-5 -->
 		<!-- Raken : This is the main block for the sensor -> calls the input of the pin value. -->
-		<!--<BlockGenus name="Sensor" kind="data" color="255 255 255"
-			initlabel="bg.Sensor" editable-label="no">
-			<description>
-				<text>Read Sensor Value</text>
-			</description>
-			<BlockConnectors>
-				<BlockConnector connector-type="number"
-					connector-kind="socket" label="#">
-					<DefaultArg genus-name="A0" label="A0" />
-				</BlockConnector>
-				<BlockConnector connector-type="boolean"
-					connector-kind="plug" />
-			</BlockConnectors>
-		</BlockGenus>
-		-->
-		<BlockGenus name="Sensor_0" kind="data" color="255 255 255"
+
+		<BlockGenus name="Sensor_0" kind="data" color="77 191 169"
 			initlabel="bg.Sensor_0" editable-label="no">
 			<description>
 				<text>Read Sensor0 Value</text>
@@ -2357,7 +2343,7 @@
 					connector-kind="plug" />
 			</BlockConnectors>
 		</BlockGenus>
-				<BlockGenus name="Sensor_1" kind="data" color="255 255 255"
+				<BlockGenus name="Sensor_1" kind="data" color="77 191 169"
 			initlabel="bg.Sensor_1" editable-label="no">
 			<description>
 				<text>Read Sensor1 Value</text>
@@ -2370,7 +2356,7 @@
 					connector-kind="plug" />
 			</BlockConnectors>
 		</BlockGenus>
-				<BlockGenus name="Sensor_2" kind="data" color="255 255 255"
+				<BlockGenus name="Sensor_2" kind="data" color="77 191 169"
 			initlabel="bg.Sensor_2" editable-label="no">
 			<description>
 				<text>Read Sensor2 Value</text>
@@ -2383,7 +2369,7 @@
 					connector-kind="plug" />
 			</BlockConnectors>
 		</BlockGenus>
-				<BlockGenus name="Sensor_3" kind="data" color="255 255 255"
+				<BlockGenus name="Sensor_3" kind="data" color="77 191 169"
 			initlabel="bg.Sensor_3" editable-label="no">
 			<description>
 				<text>Read Sensor3 Value</text>
@@ -2396,7 +2382,7 @@
 					connector-kind="plug" />
 			</BlockConnectors>
 		</BlockGenus>
-				<BlockGenus name="Sensor_4" kind="data" color="255 255 255"
+				<BlockGenus name="Sensor_4" kind="data" color="77 191 169"
 			initlabel="bg.Sensor_4" editable-label="no">
 			<description>
 				<text>Read Sensor4 Value</text>
@@ -2409,7 +2395,7 @@
 					connector-kind="plug" />
 			</BlockConnectors>
 		</BlockGenus>
-				<BlockGenus name="Sensor_5" kind="data" color="255 255 255"
+				<BlockGenus name="Sensor_5" kind="data" color="77 191 169"
 			initlabel="bg.Sensor_5" editable-label="no">
 			<description>
 				<text>Read Sensor5 Value</text>
@@ -2427,6 +2413,141 @@
 		<!-- 1. MOTOR 1-4 -->
 		<!-- Raken : This is the main block for the motor -> calls the input of the pin value. -->
 		
+		<BlockGenus name="Motor1_dir_0" kind="command" color="77 191 169"
+			initlabel="bg.Motor1_dir_0">
+			<description>
+				<text>write digital to Motor1_dir_0</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="boolean"
+					connector-kind="socket">
+					<DefaultArg genus-name="digital-high" label="HIGH" />
+				</BlockConnector>
+			</BlockConnectors>
+		</BlockGenus>
+		<BlockGenus name="Motor1_dir_1" kind="command" color="77 191 169"
+			initlabel="bg.Motor1_dir_1">
+			<description>
+				<text>write digital to Motor1_dir_1</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="boolean"
+					connector-kind="socket">
+					<DefaultArg genus-name="digital-high" label="HIGH" />
+				</BlockConnector>
+			</BlockConnectors>
+		</BlockGenus>
+		<BlockGenus name="Motor2_dir_0" kind="command" color="77 191 169"
+			initlabel="bg.Motor2_dir_0">
+			<description>
+				<text>write digital to Motor2_dir_0</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="boolean"
+					connector-kind="socket">
+					<DefaultArg genus-name="digital-high" label="HIGH" />
+				</BlockConnector>
+			</BlockConnectors>
+		</BlockGenus>
+		<BlockGenus name="Motor2_dir_1" kind="command" color="77 191 169"
+			initlabel="bg.Motor2_dir_1">
+			<description>
+				<text>write digital to Motor2_dir_1</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="boolean"
+					connector-kind="socket">
+					<DefaultArg genus-name="digital-high" label="HIGH" />
+				</BlockConnector>
+			</BlockConnectors>
+		</BlockGenus>
+		<BlockGenus name="Motor3_dir_0" kind="command" color="77 191 169"
+			initlabel="bg.Motor3_dir_0">
+			<description>
+				<text>write digital to Motor3_dir_0</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="boolean"
+					connector-kind="socket">
+					<DefaultArg genus-name="digital-high" label="HIGH" />
+				</BlockConnector>
+			</BlockConnectors>
+		</BlockGenus>
+		<BlockGenus name="Motor3_dir_1" kind="command" color="77 191 169"
+			initlabel="bg.Motor3_dir_1">
+			<description>
+				<text>write digital to Motor3_dir_1</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="boolean"
+					connector-kind="socket">
+					<DefaultArg genus-name="digital-high" label="HIGH" />
+				</BlockConnector>
+			</BlockConnectors>
+		</BlockGenus>
+		<BlockGenus name="Motor4_dir_0" kind="command" color="77 191 169"
+			initlabel="bg.Motor4_dir_0">
+			<description>
+				<text>write digital to Motor4_dir_0</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="boolean"
+					connector-kind="socket">
+					<DefaultArg genus-name="digital-high" label="HIGH" />
+				</BlockConnector>
+			</BlockConnectors>
+		</BlockGenus>
+		<BlockGenus name="Motor4_dir_1" kind="command" color="77 191 169"
+			initlabel="bg.Motor4_dir_1">
+			<description>
+				<text>write digital to Motor4_dir_1</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="boolean"
+					connector-kind="socket">
+					<DefaultArg genus-name="digital-high" label="HIGH" />
+				</BlockConnector>
+			</BlockConnectors>
+		</BlockGenus>
+		
+		<!-- 2. LED Block -->
+		<!-- Raken : This is by default connected to the Pin 13 of the LED. -->
+		<BlockGenus name="FrugalBlock_LED" kind="command" color="77 191 169"
+			initlabel="bg.FrugalBlock_LED">
+			<description>
+				<text>LED</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number"
+					connector-kind="socket" label="bc.pin_number">
+					<DefaultArg genus-name="number" label="13" />
+				</BlockConnector>
+				<BlockConnector connector-type="boolean"
+					connector-kind="socket" label="bc.status">
+					<DefaultArg genus-name="digital-on" label="ON" />
+				</BlockConnector>
+			</BlockConnectors>
+		</BlockGenus>
+		
+		<BlockGenus name="FrugalBlock_Buzzer" kind="command" color="77 191 169"
+			initlabel="bg.FrugalBlock_Buzzer">
+			<description>
+				<text>Frudino buzzer Module</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number"
+					connector-kind="socket" label="bc.pin_number">
+					<DefaultArg genus-name="number" label="14" />
+				</BlockConnector>
+				<BlockConnector connector-type="boolean"
+					connector-kind="socket" label="bc.status">
+					<DefaultArg genus-name="digital-on" label="ON" />
+				</BlockConnector>
+			</BlockConnectors>
+		</BlockGenus>
+
+		<!-- Test Block -->
+		<!-- To Test New Blocks -->
 		<BlockGenus name="TestBlock" kind="data" color="255 255 255"
 			initlabel="bg.TestBlock" editable-label="no">
 			<description>
@@ -2529,7 +2650,24 @@
 			<FamilyMember>Sensor_3</FamilyMember>
 			<FamilyMember>Sensor_4</FamilyMember>
 			<FamilyMember>Sensor_5</FamilyMember>
+		</BlockFamily>
+		<BlockFamily>
+			<FamilyMember>Motor1_dir_0</FamilyMember>
+			<FamilyMember>Motor1_dir_1</FamilyMember>
+		</BlockFamily>
+		<BlockFamily>
+			<FamilyMember>Motor2_dir_0</FamilyMember>
+			<FamilyMember>Motor2_dir_1</FamilyMember>
 		</BlockFamily>	
+		<BlockFamily>
+			<FamilyMember>Motor3_dir_0</FamilyMember>
+			<FamilyMember>Motor3_dir_1</FamilyMember>
+		</BlockFamily>
+		<BlockFamily>
+			<FamilyMember>Motor4_dir_0</FamilyMember>
+			<FamilyMember>Motor4_dir_1</FamilyMember>
+		</BlockFamily>
+		
 	</BlockFamilies>
 
 	<BlockDrawerSets>
@@ -2629,26 +2767,16 @@
 				<BlockGenusMember>wire_isread</BlockGenusMember>
 			</BlockDrawer>
 			
-			<BlockDrawer button-color="0 255 0" name="bd.Frudino">
-				<BlockGenusMember>pin-read-digital</BlockGenusMember> 
-				<BlockGenusMember>pin-read-analog</BlockGenusMember>  
-				<BlockGenusMember>pin-write-digital</BlockGenusMember>
-				<BlockGenusMember>pin-write-analog</BlockGenusMember>
-				<BlockGenusMember>servo</BlockGenusMember>
-				<BlockGenusMember>ultrasonic</BlockGenusMember>
-				<BlockGenusMember>tone</BlockGenusMember>
-				<BlockGenusMember>tone_time</BlockGenusMember>
-				<BlockGenusMember>no_tone</BlockGenusMember>
-				
+			<BlockDrawer button-color="255 255 255" name="bd.Frudino">
 	<!--		TODO - Implement these Block Genus		-->
 				<BlockGenusMember>Sensor_0</BlockGenusMember>
-				<BlockGenusMember>TestBlock</BlockGenusMember>
-
-	<!--			<BlockGenusMember>sensor-read</BlockGenusMember>  
-				<BlockGenusMember>motor</BlockGenusMember>
-				<BlockGenusMember>buzzer</BlockGenusMember>
-				<BlockGenusMember>LED</BlockGenusMember>		-->
-				
+				<BlockGenusMember>Motor1_dir_0</BlockGenusMember>
+				<BlockGenusMember>Motor2_dir_0</BlockGenusMember>
+				<BlockGenusMember>Motor3_dir_0</BlockGenusMember>
+				<BlockGenusMember>Motor4_dir_0</BlockGenusMember>
+				<BlockGenusMember>FrugalBlock_LED</BlockGenusMember>
+				<BlockGenusMember>FrugalBlock_Buzzer</BlockGenusMember>
+	<!--			<BlockGenusMember>TestBlock</BlockGenusMember>	-->
 			</BlockDrawer>
 			
 			<!-- Shapes are automatically loaded as blocks in the Shapes drawer (see 

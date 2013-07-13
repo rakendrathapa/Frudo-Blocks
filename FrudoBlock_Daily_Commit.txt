@@ -1,0 +1,19 @@
+21/8/2013
+Thing to do
+1. remove unwanted/unsupported programming tabs
+	1.1. add fruduino-kit programming tab
+2. change of the name of the software to Frugal-Blocks
+3. Change top-left viewer name to Frugal-Blocks
+4. Create Menu-Items.Move Button to Left Side.
+	4.1 Addtion Of Help. 
+
+11/07/2013
+Things after commit-
+1. Changed the jar file to be generated as frudublock.jar. It is the change in the pom file. All working fine.
+
+12.
+Added the Code for motor. 4 motors in total, which are connected to digital pin 4-11
+
+Added For Frudino_LED. Default at 13. 
+Added Frudino_Buzzer. Default at 14.
+Both Frudino_LED and Frudino_Buzzer input from abstract class.

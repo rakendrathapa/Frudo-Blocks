@@ -1,0 +1,163 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch FrugalBlocks
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   3xblotav.vwq.txt~
+#	modified:   src/main/java/com/frugalblock/Main.java
+#	modified:   src/main/java/com/frugalblock/core/Context.java
+#	modified:   src/main/java/com/frugalblock/translator/block/TranslatorBlockFactory.java
+#	modified:   src/main/java/com/frugalblock/ui/OpenblocksFrame.java
+#	modified:   src/main/resources/com/ardublock/block/block-mapping.properties
+#	new file:   src/main/resources/com/frugalblock/block/Raken_help_file.xml
+#	new file:   src/main/resources/com/frugalblock/block/ardublock.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock.xml
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_1.xml
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_af.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_ar.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_ca.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_cs.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_da.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_de.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_el.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_es_ES.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_fi.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_fr.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_he.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_hu.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_it.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_ja.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_ko.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_nl.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_no.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_pl.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_pt_BR.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_pt_PT.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_ro.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_ru.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_sr.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_sv_SE.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_tr.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_uk.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_vi.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_zh_CN.properties
+#	new file:   src/main/resources/com/frugalblock/block/ardublock_zh_TW.properties
+#	new file:   src/main/resources/com/frugalblock/block/arduino/Tinker_Accmeter.jpg
+#	new file:   src/main/resources/com/frugalblock/block/arduino/Tinker_Accmeter.png
+#	new file:   src/main/resources/com/frugalblock/block/arduino/Tinker_Button.jpg
+#	new file:   src/main/resources/com/frugalblock/block/arduino/Tinker_Button.png
+#	new file:   src/main/resources/com/frugalblock/block/arduino/Tinker_Hall.jpg
+#	new file:   src/main/resources/com/frugalblock/block/arduino/Tinker_Hall.png
+#	new file:   src/main/resources/com/frugalblock/block/arduino/Tinker_LDR.jpg
+#	new file:   src/main/resources/com/frugalblock/block/arduino/Tinker_LED.jpg
+#	new file:   src/main/resources/com/frugalblock/block/arduino/Tinker_LED.png
+#	new file:   src/main/resources/com/frugalblock/block/arduino/Tinker_LinearPotentiometer.jpg
+#	new file:   src/main/resources/com/frugalblock/block/arduino/Tinker_Mosfet.jpg
+#	new file:   src/main/resources/com/frugalblock/block/arduino/Tinker_Relay.jpg
+#	new file:   src/main/resources/com/frugalblock/block/arduino/Tinker_RotaryPotentiometer.jpg
+#	new file:   src/main/resources/com/frugalblock/block/arduino/Tinker_Servo.jpg
+#	new file:   src/main/resources/com/frugalblock/block/arduino/Tinker_Thermistor.jpg
+#	new file:   src/main/resources/com/frugalblock/block/arduino/Tinker_Tilt.jpg
+#	new file:   src/main/resources/com/frugalblock/block/arduino/Tinker_Touch.jpg
+#	new file:   src/main/resources/com/frugalblock/block/arduino/examples/T000070.abp
+#	new file:   src/main/resources/com/frugalblock/block/arduino/examples/T000090.abp
+#	new file:   src/main/resources/com/frugalblock/block/arduino/examples/T000140.abp
+#	new file:   src/main/resources/com/frugalblock/block/arduino/examples/T000150.abp
+#	new file:   src/main/resources/com/frugalblock/block/arduino/examples/T000180.abp
+#	new file:   src/main/resources/com/frugalblock/block/arduino/examples/T000190.abp
+#	new file:   src/main/resources/com/frugalblock/block/arduino/examples/T000200.abp
+#	new file:   src/main/resources/com/frugalblock/block/arduino/examples/T000220.abp
+#	new file:   src/main/resources/com/frugalblock/block/arduino/examples/T010110.abp
+#	new file:   src/main/resources/com/frugalblock/block/arduino/examples/T010117.abp
+#	new file:   src/main/resources/com/frugalblock/block/block-mapping.properties
+#	new file:   src/main/resources/com/frugalblock/block/frugalblock.xml
+#	new file:   src/main/resources/com/frugalblock/block/i18n.rb
+#	new file:   src/main/resources/com/frugalblock/block/i18n.sh
+#	new file:   src/main/resources/com/frugalblock/block/lang_def.dtd
+#	new file:   src/main/resources/com/frugalblock/block/motor.jpg
+#	new file:   src/main/resources/com/frugalblock/block/save_format.dtd
+#	new file:   src/main/resources/com/frugalblock/block/trash.png
+#	new file:   src/main/resources/com/frugalblock/block/trash_open.png
+#	new file:   src/main/resources/com/frugalblock/block/ultrasonic.jpg
+#	modified:   target/classes/com/ardublock/block/block-mapping.properties
+#	modified:   target/classes/com/frugalblock/Main.class
+#	new file:   target/classes/com/frugalblock/block/Raken_help_file.xml
+#	new file:   target/classes/com/frugalblock/block/ardublock.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock.xml
+#	new file:   target/classes/com/frugalblock/block/ardublock_1.xml
+#	new file:   target/classes/com/frugalblock/block/ardublock_af.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_ar.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_ca.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_cs.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_da.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_de.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_el.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_es_ES.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_fi.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_fr.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_he.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_hu.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_it.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_ja.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_ko.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_nl.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_no.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_pl.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_pt_BR.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_pt_PT.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_ro.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_ru.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_sr.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_sv_SE.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_tr.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_uk.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_vi.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_zh_CN.properties
+#	new file:   target/classes/com/frugalblock/block/ardublock_zh_TW.properties
+#	new file:   target/classes/com/frugalblock/block/arduino/Tinker_Accmeter.jpg
+#	new file:   target/classes/com/frugalblock/block/arduino/Tinker_Accmeter.png
+#	new file:   target/classes/com/frugalblock/block/arduino/Tinker_Button.jpg
+#	new file:   target/classes/com/frugalblock/block/arduino/Tinker_Button.png
+#	new file:   target/classes/com/frugalblock/block/arduino/Tinker_Hall.jpg
+#	new file:   target/classes/com/frugalblock/block/arduino/Tinker_Hall.png
+#	new file:   target/classes/com/frugalblock/block/arduino/Tinker_LDR.jpg
+#	new file:   target/classes/com/frugalblock/block/arduino/Tinker_LED.jpg
+#	new file:   target/classes/com/frugalblock/block/arduino/Tinker_LED.png
+#	new file:   target/classes/com/frugalblock/block/arduino/Tinker_LinearPotentiometer.jpg
+#	new file:   target/classes/com/frugalblock/block/arduino/Tinker_Mosfet.jpg
+#	new file:   target/classes/com/frugalblock/block/arduino/Tinker_Relay.jpg
+#	new file:   target/classes/com/frugalblock/block/arduino/Tinker_RotaryPotentiometer.jpg
+#	new file:   target/classes/com/frugalblock/block/arduino/Tinker_Servo.jpg
+#	new file:   target/classes/com/frugalblock/block/arduino/Tinker_Thermistor.jpg
+#	new file:   target/classes/com/frugalblock/block/arduino/Tinker_Tilt.jpg
+#	new file:   target/classes/com/frugalblock/block/arduino/Tinker_Touch.jpg
+#	new file:   target/classes/com/frugalblock/block/arduino/examples/T000070.abp
+#	new file:   target/classes/com/frugalblock/block/arduino/examples/T000090.abp
+#	new file:   target/classes/com/frugalblock/block/arduino/examples/T000140.abp
+#	new file:   target/classes/com/frugalblock/block/arduino/examples/T000150.abp
+#	new file:   target/classes/com/frugalblock/block/arduino/examples/T000180.abp
+#	new file:   target/classes/com/frugalblock/block/arduino/examples/T000190.abp
+#	new file:   target/classes/com/frugalblock/block/arduino/examples/T000200.abp
+#	new file:   target/classes/com/frugalblock/block/arduino/examples/T000220.abp
+#	new file:   target/classes/com/frugalblock/block/arduino/examples/T010110.abp
+#	new file:   target/classes/com/frugalblock/block/arduino/examples/T010117.abp
+#	new file:   target/classes/com/frugalblock/block/block-mapping.properties
+#	new file:   target/classes/com/frugalblock/block/frugalblock.xml
+#	new file:   target/classes/com/frugalblock/block/i18n.rb
+#	new file:   target/classes/com/frugalblock/block/i18n.sh
+#	new file:   target/classes/com/frugalblock/block/lang_def.dtd
+#	new file:   target/classes/com/frugalblock/block/motor.jpg
+#	new file:   target/classes/com/frugalblock/block/save_format.dtd
+#	new file:   target/classes/com/frugalblock/block/trash.png
+#	new file:   target/classes/com/frugalblock/block/trash_open.png
+#	new file:   target/classes/com/frugalblock/block/ultrasonic.jpg
+#	modified:   target/classes/com/frugalblock/core/Context$OsType.class
+#	modified:   target/classes/com/frugalblock/core/Context.class
+#	modified:   target/classes/com/frugalblock/translator/block/TranslatorBlockFactory.class
+#	modified:   target/classes/com/frugalblock/ui/OpenblocksFrame.class
+#	modified:   target/frugalblock-0.1.0-SNAPSHOT.jar
+#	modified:   target/frugalblock-all.jar
+#
+

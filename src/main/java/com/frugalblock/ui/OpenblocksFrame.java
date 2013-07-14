@@ -1,29 +1,26 @@
 package com.frugalblock.ui;
 
-import java.awt.Dimension;
-import java.awt.BorderLayout;
-import java.awt.FlowLayout;
-import java.io.File;
-import java.io.IOException;
-import java.util.ResourceBundle;
-
-import javax.swing.JFileChooser;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JButton;
-import javax.swing.filechooser.FileFilter;
-import javax.swing.filechooser.FileNameExtensionFilter;
-
-import edu.mit.blocks.controller.WorkspaceController;
-import edu.mit.blocks.workspace.Workspace;
-
 import com.frugalblock.core.Context;
 import com.frugalblock.ui.listener.FrugalBlockWorkspaceListener;
 import com.frugalblock.ui.listener.GenerateCodeButtonListener;
 import com.frugalblock.ui.listener.OpenButtonListener;
-import com.frugalblock.ui.listener.SaveButtonListener;
 import com.frugalblock.ui.listener.OpenblocksFrameListener;
+import com.frugalblock.ui.listener.SaveButtonListener;
+import edu.mit.blocks.controller.WorkspaceController;
+import edu.mit.blocks.workspace.Workspace;
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.io.File;
+import java.io.IOException;
+import java.util.ResourceBundle;
+import javax.swing.JButton;
+import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.filechooser.FileFilter;
+import javax.swing.filechooser.FileNameExtensionFilter;
 
 
 public class OpenblocksFrame extends JFrame
@@ -71,7 +68,7 @@ public class OpenblocksFrame extends JFrame
 		this.setLocationRelativeTo(null);
 		//this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		uiMessageBundle = ResourceBundle.getBundle("com/ardublock/block/ardublock");
+		uiMessageBundle = ResourceBundle.getBundle("com/frugalblock/block/ardublock");
 		
 		fileChooser = new JFileChooser();
 		ffilter = new FileNameExtensionFilter(uiMessageBundle.getString("ardublock.file.suffix"), "abp");

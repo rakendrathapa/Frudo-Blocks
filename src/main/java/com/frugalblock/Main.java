@@ -13,10 +13,10 @@ public class Main
 	public static void main(String args[]) throws SAXException, IOException, ParserConfigurationException
 	{
 		Main me = new Main();
-		me.startArdublock();
+		me.startFrugalblock();
 	}
 	
-	public void startArdublock() throws SAXException, IOException, ParserConfigurationException
+	public void startFrugalblock() throws SAXException, IOException, ParserConfigurationException
 	{
 		startOpenblocksFrame();
 		//startConsoleFrame();

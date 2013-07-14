@@ -16,20 +16,20 @@ public class TranslatorBlockFactory
 	public TranslatorBlockFactory()
 	{
 		shortClassName = new HashMap<String, String>();
-		shortClassName.put("analogInput", "com.ardublock.translator.block.AnalogInputBlock");
-		shortClassName.put("digitalInput", "com.ardublock.translator.block.DigitalInputBlock");
-		shortClassName.put("analogOutput", "com.ardublock.translator.block.AnalogOutputBlock");
-		shortClassName.put("digitalOutput", "com.ardublock.translator.block.DigitalOutputBlock");
-		shortClassName.put("inversedDigitalInput", "com.ardublock.translator.block.InversedDigitalInputBlock");
-		shortClassName.put("inversedDigitalOutput", "com.ardublock.translator.block.InversedDigitalOutputBlock");
-		shortClassName.put("inversedAnalogOutput", "com.ardublock.translator.block.InversedAnalogOutputBlock");
-                shortClassName.put("servo", "com.ardublock.translator.block.ServoBlock");
-                shortClassName.put("Frudino_Sensor", "com.ardublock.translator.block.Frudino.FrudinoSensorBlock");       //Raken Comment : Introduced for Frudino Libraries
-                shortClassName.put("Input_A", "com.ardublock.translator.block.Frudino.FrudinoSensorInputBlock");     //Raken Comment : Input PIN for our Analog SENSOR.
-                shortClassName.put("Frudino_Motor", "com.ardublock.translator.block.Frudino.FrudinoMotorBlock");    //Raken Comment: Output of the Frudino Motor
-                shortClassName.put("Frudino_LED", "com.ardublock.translator.block.Frudino.FrudinoLEDBlock");    //Raken Comment: Connect LED - By default - Pin 13
-                shortClassName.put("Frudino_Buzzer","com.ardublock.translator.block.Frudino.FrudinoLEDBlock");            //Raken Comment: Connect Buzzer - By default - Pin 14   
-                shortClassName.put("TestBlock","com.ardublock.translator.block.Frudino.FrudinoTestBlock");           //Raken Comment : Out Test Block - Can experiment here ..!!
+		shortClassName.put("analogInput", "com.frugalblock.translator.block.AnalogInputBlock");
+		shortClassName.put("digitalInput", "com.frugalblock.translator.block.DigitalInputBlock");
+		shortClassName.put("analogOutput", "com.frugalblock.translator.block.AnalogOutputBlock");
+		shortClassName.put("digitalOutput", "com.frugallock.translator.block.DigitalOutputBlock");
+		shortClassName.put("inversedDigitalInput", "com.frugalblock.translator.block.InversedDigitalInputBlock");
+		shortClassName.put("inversedDigitalOutput", "com.frugalblock.translator.block.InversedDigitalOutputBlock");
+		shortClassName.put("inversedAnalogOutput", "com.frugalblock.translator.block.InversedAnalogOutputBlock");
+                shortClassName.put("servo", "com.frugalblock.translator.block.ServoBlock");
+                shortClassName.put("Frudino_Sensor", "com.frugalblock.translator.block.Frudino.FrudinoSensorBlock");       //Raken Comment : Introduced for Frudino Libraries
+                shortClassName.put("Input_A", "com.frugalblock.translator.block.Frudino.FrudinoSensorInputBlock");     //Raken Comment : Input PIN for our Analog SENSOR.
+                shortClassName.put("Frudino_Motor", "com.frugalblock.translator.block.Frudino.FrudinoMotorBlock");    //Raken Comment: Output of the Frudino Motor
+                shortClassName.put("Frudino_LED", "com.frugalblock.translator.block.Frudino.FrudinoLEDBlock");    //Raken Comment: Connect LED - By default - Pin 13
+                shortClassName.put("Frudino_Buzzer","com.frugalblock.translator.block.Frudino.FrudinoLEDBlock");            //Raken Comment: Connect Buzzer - By default - Pin 14   
+                shortClassName.put("TestBlock","com.frugalblock.translator.block.Frudino.FrudinoTestBlock");           //Raken Comment : Out Test Block - Can experiment here ..!!
 	}
 	
 	

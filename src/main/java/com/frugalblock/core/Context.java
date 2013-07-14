@@ -1,24 +1,23 @@
 package com.frugalblock.core;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.ResourceBundle;
-
 import com.frugalblock.ui.listener.OpenblocksFrameListener;
-
 import edu.mit.blocks.controller.WorkspaceController;
 import edu.mit.blocks.renderable.RenderableBlock;
 import edu.mit.blocks.workspace.Workspace;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.ResourceBundle;
+import java.util.Set;
 
 public class Context
 {
 	public final static String LANG_DTD_PATH = "/com/ardublock/block/lang_def.dtd";
 	public final static String ARDUBLOCK_LANG_PATH = "/com/ardublock/block/ardublock.xml";
+//        public final static String FRUGALBLOCK_LANG_PATH = "/com/frugalblock/block/ardublock.xml";
 //        public final static String ARDUBLOCK_LANG_PATH = "/com/ardublock/block/ardublock_1.xml";
 	public final static String ARDUINO_VERSION_UNKNOWN = "unknown";
 	
